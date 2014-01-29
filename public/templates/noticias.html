@@ -1,0 +1,29 @@
+<div class="row">
+	<div class="large-4 columns">
+	<button ng-click="nuevoTema()">Crear nuevo articulo</button>
+	 </div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<table> 
+	<thead>
+		<th width="600px">Titulo</th>
+		<th></th>
+		<th></th>
+		<th> </th>
+	</thead>
+
+	<tbody> 
+		<tr ng-repeat="notice in noticias"> 
+			<td>{{notice.title}}</td>
+			<td><button class="button tiny" ng-click="irPost(notice.id)"> Ver</button> </td>
+			<td> <button class="button tiny success" ng-click="editar(notice.id)">Editar</button></td>
+			<td><button class="button tiny alert" ng-click="eliminar(notice.id)"> Eliminar</button></td>
+		</tr>
+	</tbody>
+
+</table>
+ </div>
+
+ </div>

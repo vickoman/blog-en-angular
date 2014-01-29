@@ -1,0 +1,29 @@
+<ng-form name="noticia">
+<div class="row">
+	<div class="large-6	 columns"> 
+	<label>titulo</label>
+		<input type="text" name="title" ng-model="notice.title" required>
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-6	 columns"> 
+	<label>contenido</label>
+		<textarea name="contenido" ng-model="notice.content"  required>
+		
+		</textarea>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="large-6	 columns"> 
+		<button ng-click="enviar()" ng-disabled="!noticia.$valid" class="tiny right">Aceptar</button>
+	</div>
+</div>
+
+
+
+	
+
+ </ng-form>
